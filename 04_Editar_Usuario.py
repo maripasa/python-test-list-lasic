@@ -15,6 +15,7 @@ def editar_usuario(arquivo_json, id):
 
     usuarios = dados['usuarios']
 
+    # Busca o usuario e pede os novos dados
     for usuario in dados['usuarios']:
         if usuario['_id'] == id:
             print(f"Nome atual: {usuario['nome']}\nSobrenome atual: {usuario['sobrenome']}\n")

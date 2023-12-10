@@ -14,6 +14,7 @@ def buscar_usuario(arquivo_json, id):
         print("Arquivo não pode ser aberto.")
         return None
 
+    # Busca pelo usuario
     for usuario in dados_usuarios['usuarios']:
         if usuario['_id'] == id:
             return usuario

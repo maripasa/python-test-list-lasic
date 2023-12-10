@@ -16,6 +16,7 @@ def deletar_usuario(arquivo_json, id):
 
     usuarios = dados['usuarios']
 
+    # Busca e remove o usuário com o id dado
     for usuario in dados['usuarios']:
         if usuario['_id'] == id:
             try:
